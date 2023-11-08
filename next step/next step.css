@@ -1,0 +1,280 @@
+:root {
+    --myblue: #1e2e3d;
+    --boxshadow: 5px 5px 5px rgba(199, 192, 192, 0.1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #eee;
+}
+
+.mobile-navbar{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+
+header .logo{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo img{
+    width: 25%;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header .logo #menu-btn{
+    color: var(--myblue);
+    font-size: 30px;
+    display: none;
+}
+
+header .deskopnav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .deskopnav .mynav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .deskopnav .mynav li{
+    list-style: none;
+}
+
+header .deskopnav .mynav li a{
+    color: var(--myblue);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+}
+
+header .deskopnav .mynav li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    background-color: var(--myblue);
+    transition: all .3s;
+}
+
+header .deskopnav .mynav li a:hover::after{
+    width: 100%;
+}
+
+header .deskopnav .mynav li a.current{
+    color: white;
+    background-color: var(--myblue);
+}
+
+header .deskopnav .account{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .deskopnav .account a{
+    background-color: transparent;
+    color: var(--myblue);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 3px;
+    border: solid 1px var(--myblue);
+}
+
+header .deskopnav .account a:hover{
+    color: white;
+    background-color: var(--myblue);
+}
+
+
+.hero-section{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/356216984_6295657280529011_4701179320618946125_n.jpg);
+    border-radius: 10px;
+    margin-top: 150px;
+}
+.hero-section .hero-wrapper{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 63, 209);
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.hero-section .hero-wrapper h1{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.hero-section .hero-wrapper p{
+    color: white;
+    font-size: 20px;
+    text-align: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.hero-section .hero-wrapper a{
+    color: white;
+    background-color: var(--myblue);
+    font-size: 15px;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.hero-section .hero-wrapper a:hover{
+    background-color: lightblue;
+    border: 3px solid var(--myblue);
+    color: var(--myblue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
